@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <link rel="stylesheet" href="calendar.css">
+   <script src="calendarjs.js"></script>
+</head>
+<body>
+        <h1 class="heading">Calendar 2021</h1>
+        <section class="drop">
+    <div class="dropdown">
+        <a class="btn btn-success dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+          Select Month
+        </a>
+      
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+
+          <li><a class="dropdown-item" onclick="myfunction3()"href="#jan">January</a></li>
+          <li><a class="dropdown-item" onclick=" myfunction2()"href="#feb">February</a></li>
+          <li><a class="dropdown-item" onclick="myfunction()"href="#march">March</a></li>
+          <li><a class="dropdown-item" onclick="myfunction4()"href="#april">April</a></li>
+          <li><a class="dropdown-item" onclick="myfunction5()"href="#may">May</a></li>
+          <li><a class="dropdown-item" onclick="myfunction6()"href="#june">June</a></li>
+          <li><a class="dropdown-item" onclick="myfunction7()"href="#july">July</a></li>
+          <li><a class="dropdown-item" onclick="myfunction8()"href="#august">August</a></li>
+          <li><a class="dropdown-item" onclick="myfunction9()"href="#sep">September</a></li>
+          <li><a class="dropdown-item" onclick="myfunction10()"href="#oct">October</a></li>
+          <li><a class="dropdown-item" onclick="myfunction11()"href="#nov">November</a></li>
+          <li><a class="dropdown-item" onclick="myfunction12()"href="#dec">December</a></li>
+          </ul>
+          </div>
+          </section>
+          <div class="calender" id="jan">
+            <div class="month">
+            <ul>
+            <li class="lastMonth"></li>
+            <li class="nextMonth"></li>
+            <li>
+            January 2021 <br />
+            <!-- <span>2020</span> -->
+            </li>
+            </ul>
+            </div>
+            <ul class="Days">
+            <li>Mo</li>
+            <li>Tu</li>
+            <li>We</li>
+            <li>Th</li>
+            <li>Fr</li>
+            <li>Sa</li>
+            <li>Su</li>
+            </ul>
+            <ul class="daysNumber">
+            <li>-</li>
+            <li>-</li>
+            <li>-</li>
+            <li>-</li>
+            <li><a href="https://en.wikipedia.org/wiki/New_Year%27s_Day" data-toggle="tooltip" title="New Year's Day">1</a></li>
+
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+            <li>6</li>
+            <li>7</li>
+            <li>8</li>
+            <li>9</li>
+            <li>10</li>
+            <li>11</li>
+            <li>12</li>
+            <li>13</li>
+            <li>14</li>
+            <li>15</li>
+            <li>16</li>
+            <li>17</li>
+            <li>18</li>
+            <li>19</li>
+            <li>20</li>
+            <li>21</li>
+            <li>22</li>
+            <li>23</li>
+            <li>24</li>
+            <li>25</li>
+            <li><a href="https://en.wikipedia.org/wiki/Republic_Day_(India)" data-toggle="tooltip" title="Republic Day">26</a></li>
+
+            <li>27</li>
+            <li>28</li>
+            <li>29</li>
+            <li>30</li>
+            <li>31</li>
+            </ul>
+            </div>
+        </ul>
+      </div>
+      
+          <div class="calender" id="feb">
+            <div class="month">
+            <ul>
+            <li class="lastMonth"></li>
+            <li class="nextMonth"></li>
+            <li>
+            February 2021 <br />
+            <!-- <span>2020</span> -->
+            </li>
+            </ul>
+            </div>
+            <ul class="Days">
+            <li>Mo</li>
+            <li>Tu</li>
+            <li>We</li>
+            <li>Th</li>
+            <li>Fr</li>
+            <li>Sa</li>
+            <li>Su</li>
+            </ul>
+            <ul class="daysNumber">
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+            <li>6</li>
+            <li>7</li>
+            <li>8</li>
+            <li>9</li>
+            <li>10</li>
+            <li>11</li>
+            <li>12</li>
+            <li>13</li>
+            <li>14</li>
+            <li>15</li>
+            <li>16</li>
+            <li>17</li>
+            <li>18</li>
+            <li>19</li>
+            <li>20</li>
+            <li>21</li>
+            <li>22</li>
+            <li>23</li>
+            <li>24</li>
+            <li>25</li>
+            <li>26</li>
+            <li>27</li>
+            <li>28</li>
+            
+            </ul>
+            </div>
+        </ul>
+      </div>
+
+          <div class="calender" id="march">
+            <div class="month">
+            <ul>
+            <li class="lastMonth"></li>
+            <li class="nextMonth"></li>
+            <li>
+            March 2021 <br />
+            <!-- <span>2020</span> -->
+            </li>
+            </ul>
+            </div>
+            <ul class="Days">
+            <li>Mo</li>
+            <li>Tu</li>
+            <li>We</li>
+            <li>Th</li>
+            <li>Fr</li>
+            <li>Sa</li>
+            <li>Su</li>
+            </ul>
+            <ul class="daysNumber">
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+            <li>6</li>
+            <li>7</li>
+            <li>8</li>
+            <li>9</li>
+            <li>10</li>
+            <li>11</li>
+            <li>12</li>
+            <li>13</li>
+            <li>14</li>
+            <li>15</li>
+            <li>16</li>
+            <li>17</li>
+            <li>18</li>
+            <li>19</li>
+            <li>20</li>
+            <li>21</li>
+            <li>22</li>
+            <li>23</li>
+            <li>24</li>
+            <li>25</li>
+            <li>26</li>
+            <li>27</li>
+            <li>28</li>
+            <li><a href="https://en.wikipedia.org/wiki/Holi" data-toggle="tooltip" title="Holi">29</a></li>
+
+            <li>30</li>
+            <li>31</li>
+            </ul>
+            </div>
+        </ul>
+      </div>
+      <div class="calender" id="april">
+        <div class="month">
+        <ul>
+        <li class="lastMonth"></li>
+        <li class="nextMonth"></li>
+        <li>
+        April 2021 <br />
+        <!-- <span>2020</span> -->
+        </li>
+        </ul>
+        </div>
+        <ul class="Days">
+        <li>Mo</li>
+        <li>Tu</li>
+        <li>We</li>
+        <li>Th</li>
+        <li>Fr</li>
+        <li>Sa</li>
+        <li>Su</li>
+        </ul>
+        <ul class="daysNumber">
+        <li>-</li>
+        <li>-</li>
+        <li>-</li>
+        <li>1</li>
+        <li><a href="https://en.wikipedia.org/wiki/Good_Friday" data-toggle="tooltip" title="Good Friday">2</a></li>
+
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+        <li>9</li>
+        <li>10</li>
+        <li>11</li>
+        <li>12</li>
+        <li>13</li>
+        <li>14</li>
+        <li>15</li>
+        <li>16</li>
+        <li>17</li>
+        <li>18</li>
+        <li>19</li>
+        <li>20</li>
+        <li>21</li>
+        <li>22</li>
+        <li>23</li>
+        <li>24</li>
+        <li>25</li>
+        <li>26</li>
+        <li>27</li>
+        <li>28</li>
+        <li>29</li>
+        <li>30</li>
+        </ul>
+        </div>
+    </ul>
+  </div>
+  <div class="calender" id="may">
+    <div class="month">
+    <ul>
+    <li class="lastMonth"></li>
+    <li class="nextMonth"></li>
+    <li>
+    May 2021 <br />
+    <!-- <span>2020</span> -->
+    </li>
+    </ul>
+    </div>
+    <ul class="Days">
+    <li>Mo</li>
+    <li>Tu</li>
+    <li>We</li>
+    <li>Th</li>
+    <li>Fr</li>
+    <li>Sa</li>
+    <li>Su</li>
+    </ul>
+    <ul class="daysNumber">
+    <li>-</li>
+    <li>-</li>
+    <li>-</li>
+    <li>-</li>
+    <li>-</li>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+    <li>6</li>
+    <li>7</li>
+    <li>8</li>
+    <li>9</li>
+    <li>10</li>
+    <li>11</li>
+    <li>12</li>
+    <li><a href="https://en.wikipedia.org/wiki/Ramadan" data-toggle="tooltip" title="Ramzan">13</a></li>
+
+    <li>14</li>
+    <li>15</li>
+    <li>16</li>
+    <li>17</li>
+    <li>18</li>
+    <li>19</li>
+    <li>20</li>
+    <li>21</li>
+    <li>22</li>
+    <li>23</li>
+    <li>24</li>
+    <li>25</li>
+    <li>26</li>
+    <li>27</li>
+    <li>28</li>
+    <li>29</li>
+    <li>30</li>
+    <li><a href="https://en.wikipedia.org/wiki/Memorial_Day" data-toggle="tooltip" title="Memorial Day">13</a></li>
+
+    </ul>
+    </div>
+    <div class="calender" id="june">
+      <div class="month">
+      <ul>
+      <li class="lastMonth"></li>
+      <li class="nextMonth"></li>
+      <li>
+      June 2021 <br />
+      <!-- <span>2020</span> -->
+      </li>
+      </ul>
+      </div>
+      <ul class="Days">
+      <li>Mo</li>
+      <li>Tu</li>
+      <li>We</li>
+      <li>Th</li>
+      <li>Fr</li>
+      <li>Sa</li>
+      <li>Su</li>
+      </ul>
+      <ul class="daysNumber">
+      <li>-</li>
+      
+      <li>1</li>
+      <li>2</li>
+      <li>3</li>
+      <li>4</li>
+      <li>5</li>
+      <li>6</li>
+      <li>7</li>
+      <li>8</li>
+      <li>9</li>
+      <li>10</li>
+      <li>11</li>
+      <li>12</li>
+      <li>13</li>
+      <li>14</li>
+      <li>15</li>
+      <li>16</li>
+      <li>17</li>
+      <li>18</li>
+      <li>19</li>
+      <li>20</li>
+      <li>21</li>
+      <li>22</li>
+      <li>23</li>
+      <li>24</li>
+      <li>25</li>
+      <li>26</li>
+      <li>27</li>
+      <li>28</li>
+      <li>29</li>
+      <li>30</li>
+      </ul>
+      </div>
+      <div class="calender" id="july">
+        <div class="month">
+        <ul>
+        <li class="lastMonth"></li>
+        <li class="nextMonth"></li>
+        <li>
+        July 2021 <br />
+        <!-- <span>2020</span> -->
+        </li>
+        </ul>
+        </div>
+        <ul class="Days">
+        <li>Mo</li>
+        <li>Tu</li>
+        <li>We</li>
+        <li>Th</li>
+        <li>Fr</li>
+        <li>Sa</li>
+        <li>Su</li>
+        </ul>
+        <ul class="daysNumber">
+        <li>-</li>
+        <li>-</li>
+        <li>-</li>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li><a href="https://en.wikipedia.org/wiki/Independence_Day_(United_States)" data-toggle="tooltip" title="Independence Day(Observed)">5</a></li>
+
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+        <li>9</li>
+        <li>10</li>
+        <li>11</li>
+        <li>12</li>
+        <li>13</li>
+        <li>14</li>
+        <li>15</li>
+        <li>16</li>
+        <li>17</li>
+        <li>18</li>
+        <li>19</li>
+        <li>20</li>
+        <li>21</li>
+        <li>22</li>
+        <li>23</li>
+        <li>24</li>
+        <li>25</li>
+        <li>26</li>
+        <li>27</li>
+        <li>28</li>
+        <li>29</li>
+        <li>30</li>
+        <li>31</li>
+
+        </ul>
+        </div>
+        <div class="calender" id="august">
+          <div class="month">
+          <ul>
+          <li class="lastMonth"></li>
+          <li class="nextMonth"></li>
+          <li>
+          August 2021 <br />
+          <!-- <span>2020</span> -->
+          </li>
+          </ul>
+          </div>
+          <ul class="Days">
+          <li>Mo</li>
+          <li>Tu</li>
+          <li>We</li>
+          <li>Th</li>
+          <li>Fr</li>
+          <li>Sa</li>
+          <li>Su</li>
+          </ul>
+          <ul class="daysNumber">
+          <li>-</li>
+          <li>-</li>
+          <li>-</li>
+          <li>-</li>
+          <li>-</li>
+          <li>-</li>
+          <li>1</li>
+          <li>2</li>
+          <li>3</li>
+          <li>4</li>
+          <li>5</li>
+          <li>6</li>
+          <li>7</li>
+          <li>8</li>
+          <li>9</li>
+          <li>10</li>
+          <li>11</li>
+          <li>12</li>
+          <li>13</li>
+          <li>14</li>
+          <li>15</li>
+          <li>16</li>
+          <li>17</li>
+          <li>18</li>
+          <li>19</li>
+          <li>20</li>
+          <li>21</li>
+          <li>22</li>
+          <li>23</li>
+          <li>24</li>
+          <li>25</li>
+          <li>26</li>
+          <li>27</li>
+          <li>28</li>
+          <li>29</li>
+          <li><a href="https://en.wikipedia.org/wiki/Krishna_Janmashtami" data-toggle="tooltip" title="Janmashtami">30</a></li>
+
+          <li>31</li>
+  
+          </ul>
+          </div>
+          <div class="calender" id="sep">
+            <div class="month">
+            <ul>
+            <li class="lastMonth"></li>
+            <li class="nextMonth"></li>
+            <li>
+            September 2021 <br />
+            <!-- <span>2020</span> -->
+            </li>
+            </ul>
+            </div>
+            <ul class="Days">
+            <li>Mo</li>
+            <li>Tu</li>
+            <li>We</li>
+            <li>Th</li>
+            <li>Fr</li>
+            <li>Sa</li>
+            <li>Su</li>
+            </ul>
+            <ul class="daysNumber">
+            <li>-</li>
+            <li>-</li>
+            
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+            <li><a href="https://en.wikipedia.org/wiki/Labour_Day" data-toggle="tooltip" title="Labor Day">6</a></li>
+
+            <li>7</li>
+            <li>8</li>
+            <li>9</li>
+            <li>10</li>
+            <li>11</li>
+            <li>12</li>
+            <li>13</li>
+            <li>14</li>
+            <li>15</li>
+            <li>16</li>
+            <li>17</li>
+            <li>18</li>
+            <li>19</li>
+            <li>20</li>
+            <li>21</li>
+            <li>22</li>
+            <li>23</li>
+            <li>24</li>
+            <li>25</li>
+            <li>26</li>
+            <li>27</li>
+            <li>28</li>
+            <li>29</li>
+            <li>30</li>
+    
+            </ul>
+            </div>
+            <div class="calender" id="oct">
+              <div class="month">
+              <ul>
+              <li class="lastMonth"></li>
+              <li class="nextMonth"></li>
+              <li>
+              October 2021 <br />
+              <!-- <span>2020</span> -->
+              </li>
+              </ul>
+              </div>
+              <ul class="Days">
+              <li>Mo</li>
+              <li>Tu</li>
+              <li>We</li>
+              <li>Th</li>
+              <li>Fr</li>
+              <li>Sa</li>
+              <li>Su</li>
+              </ul>
+              <ul class="daysNumber">
+              <li>-</li>
+              <li>-</li>
+              <li>-</li>
+              <li>-</li>
+              
+              <li>1</li>
+              <li>2</li>
+              <li>3</li>
+              <li>4</li>
+              <li>5</li>
+              <li>6</li>
+              <li>7</li>
+              <li>8</li>
+              <li>9</li>
+              <li>10</li>
+              <li>11</li>
+              <li>12</li>
+              <li>13</li>
+              <li>14</li>
+              <li><a href="https://en.wikipedia.org/wiki/Vijayadashami" data-toggle="tooltip" title="Dusshera">15</a></li>
+
+              <li>16</li>
+              <li>17</li>
+              <li>18</li>
+              <li>19</li>
+              <li>20</li>
+              <li>21</li>
+              <li>22</li>
+              <li>23</li>
+              <li>24</li>
+              <li>25</li>
+              <li>26</li>
+              <li>27</li>
+              <li>28</li>
+              <li>29</li>
+              <li>30</li>
+              <li>31</li>
+
+              </ul>
+              </div>
+              <div class="calender" id="nov">
+                <div class="month">
+                <ul>
+                <li class="lastMonth"></li>
+                <li class="nextMonth"></li>
+                <li>
+                November 2021 <br />
+                <!-- <span>2020</span> -->
+                </li>
+                </ul>
+                </div>
+                <ul class="Days">
+                <li>Mo</li>
+                <li>Tu</li>
+                <li>We</li>
+                <li>Th</li>
+                <li>Fr</li>
+                <li>Sa</li>
+                <li>Su</li>
+                </ul>
+                <ul class="daysNumber">
+                
+                
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li><a href="https://en.wikipedia.org/wiki/Diwali" data-toggle="tooltip" title="Diwali">4</a></li>
+
+                <li><a href="https://en.wikipedia.org/wiki/Diwali" data-toggle="tooltip" title="Diwali">5</a></li>
+
+                <li>6</li>
+                <li>7</li>
+                <li>8</li>
+                <li>9</li>
+                <li>10</li>
+                <li>11</li>
+                <li>12</li>
+                <li>13</li>
+                <li>14</li>
+                <li>15</li>
+                <li>16</li>
+                <li>17</li>
+                <li>18</li>
+                <li>19</li>
+                <li>20</li>
+                <li>21</li>
+                <li>22</li>
+                <li>23</li>
+                <li>24</li>
+                <li><a href="https://en.wikipedia.org/wiki/Thanksgiving" data-toggle="tooltip" title="Thanks Giving">25</a></li>
+
+                <li><a href="https://en.wikipedia.org/wiki/Thanksgiving" data-toggle="tooltip" title="Thanks Giving">26</a></li>
+
+                <li>27</li>
+                <li>28</li>
+                <li>29</li>
+                <li>30</li>
+                
+  
+                </ul>
+                </div>
+                <div class="calender" id="dec">
+                  <div class="month">
+                  <ul>
+                  <li class="lastMonth"></li>
+                  <li class="nextMonth"></li>
+                  <li>
+                  December 2021 <br />
+                  <!-- <span>2020</span> -->
+                  </li>
+                  </ul>
+                  </div>
+                  <ul class="Days">
+                  <li>Mo</li>
+                  <li>Tu</li>
+                  <li>We</li>
+                  <li>Th</li>
+                  <li>Fr</li>
+                  <li>Sa</li>
+                  <li>Su</li>
+                  </ul>
+                  <ul class="daysNumber">
+                  
+                    <li>-</li>
+                    <li>-</li>
+                  <li>1</li>
+                  <li>2</li>
+                  <li>3</li>
+                  <li>4</li>
+                  <li>5</li>
+                  <li>6</li>
+                  <li>7</li>
+                  <li>8</li>
+                  <li>9</li>
+                  <li>10</li>
+                  <li>11</li>
+                  <li>12</li>
+                  <li>13</li>
+                  <li>14</li>
+                  <li>15</li>
+                  <li>16</li>
+                  <li>17</li>
+                  <li>18</li>
+                  <li>19</li>
+                  <li>20</li>
+                  <li>21</li>
+                  <li>22</li>
+                  <li>23</li>
+                  <li><a href="https://en.wikipedia.org/wiki/Thanksgiving" data-toggle="tooltip" title="Christmas Eve">24</a></li>
+
+                  <li>25</li>
+                  <li>26</li>
+                  <li><a href="https://en.wikipedia.org/wiki/Thanksgiving" data-toggle="tooltip" title="Christmas Observed">27</a></li>
+
+                  <li>28</li>
+                  <li>29</li>
+                  <li>30</li>
+                  <li><a href="https://en.wikipedia.org/wiki/Thanksgiving" data-toggle="tooltip" title="New Year's Eve">31</a></li>
+
+
+    
+                  </ul>
+                  </div>
+      </section>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+
+</body>
+</html>
